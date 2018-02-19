@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { ListView, FlatList, SectionList } from 'react-native';
 import MultiSelectRow from './MultiSelectRow';
 
@@ -9,7 +10,7 @@ class MultiSelect extends Component {
     this.renderRow = this.renderRow.bind(this);
     this.selectRow = this.selectRow.bind(this);
     this.generateDataSource = this.generateDataSource.bind(this);
-    
+
     this.state = {
       selectedRows: props.selectedOptions || [],
     };
